@@ -54,6 +54,9 @@
     <ClCompile Include="Statystyki.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Mecz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mistrzostwa.h">
@@ -90,6 +93,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Statystyki.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mecz.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -29,11 +29,19 @@ public:
 		}
 	}
 
-	inline string pobierz_nazwa() { return nazwa; }
+	string pobierz_nazwa()
+	{
+		return nazwa;
+	}
 
-	Statystyki  pobierz_statysyki()
+	Statystyki pobierz_statysyki()
 	{
 		return statystyki;
+	}
+
+	friend ostream & operator<<(ostream & ekran, Kraj m)
+	{
+		return ekran << m.nazwa;
 	}
 };
 

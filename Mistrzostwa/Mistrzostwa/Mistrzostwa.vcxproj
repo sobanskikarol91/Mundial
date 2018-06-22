@@ -118,6 +118,7 @@
     <ClCompile Include="Bramkarz.cpp" />
     <ClCompile Include="Grupa.cpp" />
     <ClCompile Include="Kraj.cpp" />
+    <ClCompile Include="Mecz.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Mistrzostwa.cpp" />
     <ClCompile Include="Napastnik.cpp" />
@@ -133,6 +134,7 @@
     <ClInclude Include="Bramkarz.h" />
     <ClInclude Include="Grupa.h" />
     <ClInclude Include="Kraj.h" />
+    <ClInclude Include="Mecz.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Mistrzostwa.h" />
     <ClInclude Include="Napastnik.h" />
