@@ -9,7 +9,7 @@
 #include <vector>
 #include "Grupa.h"
 #include "Mecz.h"
-
+   
 class Mistrzostwa : public Menu
 {
 	vector<Grupa> grupy;
@@ -62,7 +62,7 @@ public:
 
 	void grupa_B()
 	{
-		// Polska
+		// Portugalia
 		Kraj portugalia("Portugalia", Trener("Adam", "Nawalka"), vector<Pilkarz>{
 			Bramkarz("Wojciech", "Strzesny"),
 				Obronca("Michal", "Pazdan"), Obronca("Thiago", "Cionek"), Obronca("Piszczek", "Piszczek"),
@@ -78,7 +78,7 @@ public:
 				Napastnik("Kamil", "Grosicki"), Napastnik("Arkadiusz", "Milik"), Napastnik("Robert", "Lewandowski")},
 			Statystyki(2, 1, 1, 0, 4));
 
-		// Japonia
+		// Iran
 		Kraj iran("Iran", Trener("s1", "s1"), vector<Pilkarz>{
 			Bramkarz("Wojciech", "Strzesny"),
 				Obronca("Michal", "Pazdan"), Obronca("Thiago", "Cionek"), Obronca("Piszczek", "Piszczek"),
@@ -86,7 +86,7 @@ public:
 				Napastnik("Kamil", "Grosicki"), Napastnik("Arkadiusz", "Milik"), Napastnik("Robert", "Lewandowski")},
 			Statystyki(2, 1, 0, 1, 3));
 
-		// Kolumbia
+		// Maroko
 		Kraj maroko("Maroko", Trener("s1", "s1"), vector<Pilkarz>{
 			Bramkarz("Wojciech", "Strzesny"),
 				Obronca("Michal", "Pazdan"), Obronca("Thiago", "Cionek"), Obronca("Piszczek", "Piszczek"),
@@ -100,15 +100,24 @@ public:
 	void dodaj_wyniki()
 	{
 		wyniki = vector<Mecz>{
-			Mecz("06.14.2018", grupy[0].znajdz_kraj("Polska"), grupy[0].znajdz_kraj("Senegal"), 1, 2),
+			Mecz("19.06.2018", grupy[0].znajdz_kraj("Kolumbia"), grupy[0].znajdz_kraj("Japonia"), 1, 2),
+			Mecz("14.06.2018", grupy[0].znajdz_kraj("Polska"), grupy[0].znajdz_kraj("Senegal"), 1, 2),
+
+			//Grupa B
+			Mecz("15.06.2018", grupy[1].znajdz_kraj("Maroko"), grupy[1].znajdz_kraj("Iran"), 1, 2),
+			Mecz("15.06.2018", grupy[1].znajdz_kraj("Portugalia"), grupy[1].znajdz_kraj("Hiszpania"),3, 3),
+			Mecz("20.06.2018", grupy[1].znajdz_kraj("Portugalia"), grupy[1].znajdz_kraj("Maroko"), 1, 0),
+			Mecz("20.06.2018", grupy[1].znajdz_kraj("Iran"), grupy[1].znajdz_kraj("Hiszpania"),0, 1)
+
+			// dodac inne grupy nalezy zwrocic uwage na kolejnosc dodawania oraz do jakiego indeksu sie zwracamy
+			// w konstruktorze Mistrzostwa dodajemy grupy i w takiej kolejnosci nalezzy przeszukiwac graje
 		};
 	}
 
-
 	void naglowek()
 	{
-		cout << "=====================================";
-		cout << "MISTORZSTWA SWIATA";
+		cout << "=====================================" << endl;
+		cout << "MISTORZSTWA SWIATA" << endl;
 		cout << "=====================================" << endl;
 	}
 

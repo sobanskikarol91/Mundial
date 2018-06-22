@@ -11,6 +11,7 @@ class Osoba
 protected:
 	Osoba() {}
 	Osoba(string imie, string nazwisko) : imie(imie), nazwisko(nazwisko) {}
+
 	virtual void wyswietl() 
 	{
 		cout << imie << " " << nazwisko << endl;

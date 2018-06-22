@@ -13,7 +13,7 @@ public:
 
 	friend ostream & operator<<(ostream & ekran, Mecz m)
 	{
-		return ekran << *m.kraj1 << " " << m.k1_wynik << " : " << m.k2_wynik << " " << *m.kraj2 << "   " << m.data << endl;
+		return ekran << m.data << " "<< *m.kraj1 << " " << m.k1_wynik << " : " << m.k2_wynik << " " << *m.kraj2 << "   " << endl;
 	}
 };
 
